@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Results</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://e0.pxfuel.com/wallpapers/222/720/desktop-wallpaper-books-background-galleries-old-book-pages.jpg'); /* Replace 'path/to/background/image.jpg' with your actual image path */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.6); /* Adjust opacity as needed */
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .container p {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 300%;">Books Results</h1>
+        <p style="font-size: 200%;">Title: {{ Book.title }}</p>
+        <p style="font-size: 200%;">Author: {{ Book.author }}</p>
+        <p style="font-size: 200%;">Genre: {{ Book.genre }}</p>
+        <p style="font-size: 200%;">Publication Date: {{ Book.publication_date }}</p>
+    </div>
+</body>
+</html>
